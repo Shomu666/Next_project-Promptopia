@@ -12,6 +12,7 @@ export const GET = async(req, { params }) => {
 
     return new Response(JSON.stringify(prompt), {status: 200})
    } catch (error) {
+    console.log(error)
     return new Response("Failed to load the prompts", { status: 500})
    }
 }
@@ -31,6 +32,7 @@ export const PATCH = async (req, { params }) => {
     await existsingPrompt.save();
     return new Response(JSON.stringify(existsingPrompt), {status: 200})
    } catch (error) {
+    console.log(error)
     return new Response("Failde to update prompt", {status: 500})
    }
 }
@@ -41,6 +43,7 @@ export const DELETE = async (req, { params }) => {
         await Prompt.findByIdAndDelete(params.id);
         return new Response("Prompt deleted successfully", {status: 200})
     } catch (error) {
+        console.log(error)
         return new Response("Failed to delete prompt", {status: 500})
     }
 }

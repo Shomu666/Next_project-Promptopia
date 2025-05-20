@@ -12,6 +12,7 @@ export const GET = async (req, { params }) => {
         return new Response(JSON.stringify(userPosts), {status: 200})
 
     } catch (error) {
+        console.log(error)
         return new Response("Error in fetching user posts", {status: 500})
     }
 }

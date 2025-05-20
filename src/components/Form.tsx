@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import loading from '../assets/icons/gears-spinner.svg'
 
-const Form = ({ type, post, setPost, submit, setSubmit, handleSubmit}) => {
+const Form = ({ type, post, setPost, submit, handleSubmit}) => {
   return (
     <section className='w-full max-w-full flex flex-col flex-start gap-3'>
       <h1 className='text-4xl font-extrabold bg-gradient-to-r from-teal-500 via-blue-200 to-red-400 bg-clip-text text-transparent'>{type} form</h1>

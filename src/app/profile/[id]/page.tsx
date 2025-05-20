@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useId, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import Profile from '@/components/Profile';
 
 
-const UserProfile = (req, { params }) => {
+const UserProfile = () => {
     const searchParams = useSearchParams();
     const userId = searchParams.get('id')
     const userName = searchParams.get('name')
@@ -21,7 +21,7 @@ const UserProfile = (req, { params }) => {
       if(userId){
         fetchUserPosts()
       }
-    }, [])
+    }, [userId])
 
   return (
     <div>

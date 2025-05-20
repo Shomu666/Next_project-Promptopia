@@ -40,7 +40,7 @@ const router = useRouter();
       }
 
       fetchUserPosts()
-  }, [])
+  }, [session?.user.id])
   return (
     <div>
       <Profile name='My' desc='Welcome to your personalized profile page' handleEdit={handleEdit} handleDelete={handleDelete} data={posts}/>

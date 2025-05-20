@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Provider from "@/components/Provider";
-import { SessionProvider } from "next-auth/react";
+
 
 export const metadata: Metadata = {
   title: "Create Next App",

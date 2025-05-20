@@ -4,7 +4,6 @@ import {signIn, signOut, useSession, getProviders} from 'next-auth/react'
 import Link from 'next/link'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import { ClientSafeProvider } from 'next-auth/react';
 import logo from '../assets/images/logo.svg'
 
 const Nav = () => {

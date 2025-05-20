@@ -3,9 +3,7 @@
 
 import Form from "@/components/Form"
 import { useRouter, useSearchParams } from "next/navigation";
-import { create } from "domain";
 import { useEffect, useState } from "react"
-import { POST } from "../api/auth/[...nextauth]/route";
 import { useSession } from "next-auth/react";
 export default function UpdatePrompt() {
 

@@ -6,7 +6,6 @@ import copy from '@/assets/icons/copy.svg'
 import tick from '@/assets/icons/tick.svg'
 import { useSession } from 'next-auth/react';
 import { usePathname } from 'next/navigation';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 const PromptCard = ({ prompt, handleTagClick, handleEdit, handleDelete }) => {
